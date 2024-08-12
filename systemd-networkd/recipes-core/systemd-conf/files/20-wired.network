@@ -1,0 +1,17 @@
+[Match]
+Type=ether
+Name=!veth*
+KernelCommandLine=!nfsroot
+KernelCommandLine=!ip
+
+[Network]
+DHCP=ipv4
+IgnoreCarrierLoss=3s
+IPv6AcceptRA=yes
+
+[DHCPv4]
+RouteMetric=20
+UseHostname=false
+
+[IPv6AcceptRA]
+RouteMetric=20
